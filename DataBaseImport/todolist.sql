@@ -2,10 +2,6 @@
 -- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1
--- Время создания: Июн 28 2021 г., 01:17
--- Версия сервера: 10.4.14-MariaDB
--- Версия PHP: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
