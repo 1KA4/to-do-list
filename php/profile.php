@@ -122,9 +122,8 @@ if(isset($_GET['update_name'])){
           <ul class="list-group mt-3">
             <div class="list-group-item text-muted">Owner Social Media</div>
             <div class="list-group-item ">
-                <a href="https://www.facebook.com/profile.php?id=100009734865470/"><i class="fa fa-facebook fa-2x"></i></a>
-                <a href="https://github.com/1KA4/"><i class="fa fa-github fa-2x"></i></a>
-                <a href="https://1ka4.github.io/"><i class="far fa-address-card fa-2x"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="https://github.com/"><i class="fa fa-github fa-2x"></i></a>
             </div>
           </ul> 
          
