@@ -21,7 +21,7 @@ if(isset($_POST["upload_img"])){
             $isImageInDB = mysqli_query($connection, "SELECT * FROM user_images WHERE `user_id` = '".$id."'");
             $now = "NOW()";
             $isImageInDBArr = mysqli_fetch_array($isImageInDB);
-            if(sizeof($isImageInDBArr) > 0){
+            if(is_countable($isImageInDBArr) && count($isImageInDBArr) > 0){
                 $insert = mysqli_query($connection ,"UPDATE `user_images` SET `user_id`='".$id."',`image`='".$imgContent ."',`image_name`= $now WHERE `user_id` = '".$id."'"); 
             }else{
                 $insert = mysqli_query($connection ,"INSERT into user_images (user_id, image, image_name) VALUES ('".$id."','$imgContent', $now)"); 

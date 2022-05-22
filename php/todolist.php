@@ -86,10 +86,10 @@ include "db_connect.php";
                             <option value="11">December</option>
                         </select>
                         <select name="inputYear" id="inputYear">
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
                             
                         </select>
                 </div>
@@ -99,7 +99,7 @@ include "db_connect.php";
                     </a>
                 </div>
             </div>
-                <div class="row" id="monthDays"></div>
+                <div class="calendar-row" id="monthDays"></div>
     </div>
 
     
