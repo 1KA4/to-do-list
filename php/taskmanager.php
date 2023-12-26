@@ -22,7 +22,7 @@ if (isset($_GET["submit"])) {  // Add new Task
 
     mysqli_query($connection, $addTask);
 
-    header("Location: todolist.php?taskdate=$taskDate"); ////////////////////////////////////////////
+    header("Location: todolist.php?taskdate=$taskDate"); 
 }
 
 

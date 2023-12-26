@@ -1,8 +1,8 @@
 <?php
-$db_url = "[adres-serwera-bazy-danych]";
-$db_user = "[nazwa-użytkownika]";
-$db_password = "[hasło]";
-$db_name = "[nazwa-bazy-danych]";
+$db_url = "localhost";
+$db_user = "root";
+$db_password = "";
+$db_name = "todolist";
 
 $connection = mysqli_connect($db_url, $db_user, $db_password, $db_name);
 

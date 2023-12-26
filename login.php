@@ -62,6 +62,7 @@ if (isset($_POST["signin"])) {   // Check user data in DB
 } else if (isset($_POST["signup"])) {  // Create new user
     $email = mysqli_real_escape_string($connection, $_POST["email"]);
     $password = mysqli_real_escape_string($connection, $_POST["password"]);
+
     if (isEmailExist($email, $connection)[0]) {
         $result = "This email alredy exist!";
     } else {
