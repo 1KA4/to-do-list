@@ -1,0 +1,104 @@
+* {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 280px;
+}
+
+.logo {
+    border-radius: 10px;
+}
+
+.container-fluid {
+    max-width: 1000px;
+    padding: 1rem 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.calendar-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    gap: 0.5rem;
+}
+
+.col {
+    height: 0;
+    padding-top: 100%;
+    min-width: 100px;
+    outline: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.col:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.date-day {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 65px;
+    font-weight: 400;
+    font-family: 'Black Ops One', cursive;
+    opacity: 0.3;
+}
+
+.number-of-tasks {
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #007bff8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-line {
+    min-height: 10vh;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.date {
+    font-size: x-large;
+}
+
+.date-line .prev,
+.next {
+    font-size: xx-large;
+}
+
+.next:hover,
+.prev:hover {
+    cursor: pointer;
+    color: lightblue;
+}
+
+#viewTaskModal .modal-body div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 25% !important;
+    height: 10vh !important;
+}
+
+.custom-file-input {
+    cursor: pointer;
+}
